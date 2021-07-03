@@ -1,5 +1,6 @@
 package com.udacity
 
+import android.app.NotificationManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +15,9 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
+
+        val notificationManager = getSystemService(NotificationManager::class.java)
+        notificationManager.cancelAll() //if you saved it or cancelAll()
 
         fileName = intent.getStringExtra("fileName").toString()
         status = intent.getStringExtra("status").toString()
