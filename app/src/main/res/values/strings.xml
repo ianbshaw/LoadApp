@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Load App</string>
+    <string name="app_description">Download files from Internet</string>
+    <string name="notification_title">Downloaded Successfully</string>
+    <string name="action_settings">Placeholder</string>
+    <string name="download_channel_id">download_channel_id</string>
+    <string name="download_notification_channel_name">Download Channel</string>
+    <string name="title_text">Download Selected Files</string>
+    <string name="glide_text">Glide - Image Loading Library by BumpTech</string>
+    <string name="loadapp_text">LoadApp - Current repository by Udacity</string>
+    <string name="retrofit_text">Retrofit - Type-safe HTTP client for Android and Java by Square, Inc</string>
+    <string name="file_text">File name:</string>
+    <string name="status_text">Status:</string>
+    <string name="status_default">Download Complete</string>
+    <string name="ok_button_text">OK</string>
+</resources>

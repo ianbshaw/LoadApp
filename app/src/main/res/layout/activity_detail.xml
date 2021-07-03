@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/file_text"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="335dp"
+        android:text="@string/status_text"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintStart_toStartOf="@+id/file" />
+
+    <TextView
+        android:id="@+id/file_value"
+        android:layout_width="246dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/status_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/file"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:id="@+id/status_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="332dp"
+        android:text="@string/status_default"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/file_value" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="112dp"
+        android:background="@color/orange"
+        android:text="@string/ok_button_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
